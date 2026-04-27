@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171"
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<VBox alignment="CENTER"
+      spacing="20.0"
+      style="-fx-background-color: #0f0f17;"
+      xmlns="http://javafx.com/javafx/8.0.171"
       xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.parser.pars.Controller">
-    <Label fx:id="bit" text="0" />
+    <Label style="--primary-color: #00b670; -fx-font-size: 32px;" fx:id="bit" text="0" />
+    <Label style="--primary-color: #00b670; -fx-font-size: 16px;" fx:id="delay" text="-/-" />
+    <Label style="--primary-color: #00b670; -fx-font-size: 16px;" fx:id="script" text="-/-" />
+    <Label style="--primary-color: #00b670; -fx-font-size: 16px;" fx:id="translated" text="-/-" />
+    <TextField style="--primary-color: #00b670; -fx-font-size: 16px; -fx-background-color: #1f0f17;" fx:id="bin"></TextField>
+    <Button style="--primary-color: #00b670; -fx-font-size: 16px; -fx-background-color: #000f17;" onAction="#sendBinary">SEND</Button>
 </VBox>
