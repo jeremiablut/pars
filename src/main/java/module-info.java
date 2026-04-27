@@ -10,6 +10,7 @@ module com.parser.pars {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires jdk.httpserver;
 
     opens com.parser.pars to javafx.fxml;
     exports com.parser.pars;
